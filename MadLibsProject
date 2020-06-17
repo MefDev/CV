@@ -1,0 +1,65 @@
+  /* This program ...
+            Author: Mohammed Meftah
+            */
+            string authorName = "Mohamed Meftah";
+            Console.WriteLine("the program is written by " + authorName);
+
+            // Define user input and variables:
+            string story;
+            string Name, cutlery, pool, pronounThey, year, mood2, message, heOut, water;
+            string adj, monster, mood, objects, work, protest, clan, protestor;
+
+
+          
+            
+
+            // Let the user know that the program is starting:
+            Console.WriteLine("Press Enter to start the program...");
+            string pressKey = Console.ReadLine();
+
+            // Give the Mad Lib a title:
+            string title = "Mad Libs Project";
+            Console.WriteLine(title);
+            Console.Write("Write a Name: ");
+            Name = Console.ReadLine();
+            Console.Write("Write an adj: ");
+            adj = Console.ReadLine();
+            Console.Write("Write a mood: ");
+            mood = Console.ReadLine();
+            Console.Write("Write a Monster: ");
+            monster = Console.ReadLine();
+            Console.Write("Write a work: ");
+            work = Console.ReadLine();
+            Console.Write("Write a protest: ");
+            protest = Console.ReadLine();
+            Console.Write("Write a clan: ");
+            clan = Console.ReadLine();
+            Console.Write("Write a protestor: ");
+            protestor = Console.ReadLine();
+            Console.Write("Write a cutlery: ");
+            cutlery = Console.ReadLine();
+            Console.Write("Write a pool: ");
+            pool = Console.ReadLine();
+            Console.Write("Write a pronoun: ");
+            pronounThey = Console.ReadLine();
+            Console.Write("Write a year: ");
+            year = Console.ReadLine();
+            Console.Write("Write a sate: ");
+            mood2 = Console.ReadLine();
+            Console.Write("Write a message: ");
+            message = Console.ReadLine();
+            Console.Write("Write an adjective: ");
+            heOut = Console.ReadLine();
+            Console.Write("Write an envirenment : ");
+            water = Console.ReadLine();
+            Console.Write("Write a objects: ");
+            objects = Console.ReadLine();
+
+            // The template for the story:
+
+
+            story = $"This morning + {Name} woke up feeling {adj}. 'It is going to be a {mood} day!' Outside, a bunch of {objects}s were protesting to keep {work} in stores. They began to {protest} to the rhythm of the {clan}, which made all the {protestor}s very {mood2}. Concerned, about texted {message}, who flew {heOut} to {water} and dropped {cutlery} in a puddle of frozen {pool}. {pronounThey} woke up in the year {year}, in a world where {monster}s ruled the world.";
+            Console.WriteLine(story);
+
+
+            Console.Read();
