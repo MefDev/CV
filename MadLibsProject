@@ -1,17 +1,21 @@
-  /* This program ...
-            Author: Mohammed Meftah
-            */
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+                  This program ...
+                  Author: ...
+                  */
             string authorName = "Mohamed Meftah";
             Console.WriteLine("the program is written by " + authorName);
-
-            // Define user input and variables:
-            string story;
-            string Name, cutlery, pool, pronounThey, year, mood2, message, heOut, water;
-            string adj, monster, mood, objects, work, protest, clan, protestor;
-
-
-          
-            
 
             // Let the user know that the program is starting:
             Console.WriteLine("Press Enter to start the program...");
@@ -19,47 +23,59 @@
 
             // Give the Mad Lib a title:
             string title = "Mad Libs Project";
+
             Console.WriteLine(title);
-            Console.Write("Write a Name: ");
-            Name = Console.ReadLine();
-            Console.Write("Write an adj: ");
-            adj = Console.ReadLine();
-            Console.Write("Write a mood: ");
-            mood = Console.ReadLine();
+            // Define user input and variables:
+            string story;
+            string firstName, firstAdj, secondAdj, verb, year, secondNoun, secondName, thirdName, food, superHero, fruit;
+            string monster, firstNoun, forthName, animal, country, dessert, thirdAdj;
+
+            // introduce variables 
+            Console.Write("Enter a Name: ");
+            firstName = Console.ReadLine();
+            Console.Write("Write another Name: ");
+            secondName = Console.ReadLine();
             Console.Write("Write a Monster: ");
             monster = Console.ReadLine();
-            Console.Write("Write a work: ");
-            work = Console.ReadLine();
-            Console.Write("Write a protest: ");
-            protest = Console.ReadLine();
-            Console.Write("Write a clan: ");
-            clan = Console.ReadLine();
-            Console.Write("Write a protestor: ");
-            protestor = Console.ReadLine();
-            Console.Write("Write a cutlery: ");
-            cutlery = Console.ReadLine();
-            Console.Write("Write a pool: ");
-            pool = Console.ReadLine();
-            Console.Write("Write a pronoun: ");
-            pronounThey = Console.ReadLine();
+            Console.Write("Write a superhero: ");
+            superHero = Console.ReadLine();
+            Console.Write("Write a name: ");
+            forthName = Console.ReadLine();
+            
+            Console.Write("Write an adjective: ");
+            firstAdj = Console.ReadLine();
+            Console.Write("Write another adjective: ");
+            secondAdj = Console.ReadLine();
+            Console.Write("Enter a verb: ");
+            verb = Console.ReadLine();
+            Console.Write("Write an adjective: ");
+            thirdAdj = Console.ReadLine();
+            Console.Write("Write another noun: ");
+            firstNoun = Console.ReadLine();
+            Console.Write("Write a noun: ");
+            secondNoun = Console.ReadLine();
             Console.Write("Write a year: ");
             year = Console.ReadLine();
-            Console.Write("Write a sate: ");
-            mood2 = Console.ReadLine();
-            Console.Write("Write a message: ");
-            message = Console.ReadLine();
-            Console.Write("Write an adjective: ");
-            heOut = Console.ReadLine();
-            Console.Write("Write an envirenment : ");
-            water = Console.ReadLine();
-            Console.Write("Write a objects: ");
-            objects = Console.ReadLine();
+            Console.Write("Write a country: ");
+            country = Console.ReadLine();
+            Console.Write("Write a food: ");
+            food = Console.ReadLine();
+            Console.Write("Write a fruit: ");
+            fruit = Console.ReadLine();
+            Console.Write("Write an dessert : ");
+            dessert = Console.ReadLine();
+            Console.Write("Write a animal: ");
+            animal = Console.ReadLine();
+            Console.Write("write a name: ");
+            thirdName = Console.ReadLine();
 
             // The template for the story:
 
-
-            story = $"This morning + {Name} woke up feeling {adj}. 'It is going to be a {mood} day!' Outside, a bunch of {objects}s were protesting to keep {work} in stores. They began to {protest} to the rhythm of the {clan}, which made all the {protestor}s very {mood2}. Concerned, about texted {message}, who flew {heOut} to {water} and dropped {cutlery} in a puddle of frozen {pool}. {pronounThey} woke up in the year {year}, in a world where {monster}s ruled the world.";
+            story = $"This morning {firstName} woke up feeling {firstAdj}. 'It is going to be a {secondAdj} day!' Outside, \na bunch of {animal}s were protesting to keep\n {food} in stores. They began to {verb} to the rhythm of the {firstNoun}, which made all \nthe {fruit}s very {thirdAdj}. Concerned, {secondNoun} texted {superHero}, who flew {secondName} to {country} and \ndropped {thirdName} in a puddle of frozen {dessert}. {forthName} woke up in the year {year}, \nin a world where {monster}s ruled the world.";
             Console.WriteLine(story);
-
-
             Console.Read();
+        }
+
+        
+    }
+}
