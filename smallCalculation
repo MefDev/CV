@@ -66,6 +66,7 @@ namespace ConsoleApplication1
            
             else
                 Console.WriteLine("Error operation");
+                Console.WriteLine($"Thank you, {fullName} bye have a nice day!");
             
             Console.Read();
             
